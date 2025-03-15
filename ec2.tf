@@ -11,7 +11,7 @@ resource "aws_instance" "eks_management_instance" {
     Name = "my_eks-management-instance"
   }
 
-  user_data = file("app.sh")  # Ensure the script exists and is executable
+  user_data = file("script.sh")  # Ensure the script exists and is executable
 }
 
 # Get Latest Ubuntu AMI
